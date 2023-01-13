@@ -1,0 +1,39 @@
+@import './../vars/vars.scss';
+
+.content {
+  width: 100%;
+  &__body {
+    width: 100%;
+    display: flex;
+  }
+  &__nav {
+    background-color: $bg13ce66;
+    width: 264px;
+    height: 904px;
+    padding: 13px 19px;
+  }
+}
+
+.navigation {
+  width: 100%;
+  &__list {
+    margin: 0;
+    padding: 0;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: flex-start;
+  }
+  &__item {
+    list-style: none;
+    &:last-child {
+      margin-top: 70px;
+    }
+  }
+  &__link {
+    color: $fontColor_fff;
+    font-size: 34px;
+    line-height: 44px;
+    text-align: left;
+    text-decoration: none;
+  }
+}

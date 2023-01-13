@@ -1,0 +1,47 @@
+@import './Item-SCSS/Header/header.scss';
+@import './Item-SCSS/Main/main.scss';
+@import './Item-SCSS/Footer/footer.scss';
+
+@import './Item-SCSS/vars/vars.scss';
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
+  border: $border;
+  background: yellow;
+}
+
+.header {
+  background-color: $bg13ce66;
+  width: 100%;
+  height: 74px;
+}
+
+.footer {
+  widtth: 100%;
+  height: 100px;
+  background: $bg13ce66;
+}
+
+.container {
+  @include Container;
+  border: 1px solid red;
+}
+
+
+
+
+

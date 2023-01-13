@@ -1,0 +1,6 @@
+@mixin Container {
+  width: 1400px;
+  height: 100%;
+  padding: 0 8px;
+  margin: $marginCenter;
+}
