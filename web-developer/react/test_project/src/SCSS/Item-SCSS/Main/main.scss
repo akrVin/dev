@@ -1,6 +1,7 @@
 @import './../vars/vars.scss';
 
 .content {
+  margin: 16px 0 0 0;
   width: 100%;
   &__body {
     width: 100%;
@@ -8,9 +9,13 @@
   }
   &__nav {
     background-color: $bg13ce66;
-    width: 264px;
+    min-width: 264px;
     height: 904px;
     padding: 13px 19px;
+  }
+  &__prof {
+    flex: 1 1 auto;
+    margin: 0 0 0 20px;
   }
 }
 
@@ -19,9 +24,6 @@
   &__list {
     margin: 0;
     padding: 0;
-    //display: flex;
-    //flex-direction: column;
-    //align-items: flex-start;
   }
   &__item {
     list-style: none;
@@ -37,3 +39,38 @@
     text-decoration: none;
   }
 }
+
+.profile {
+  
+  &__header {
+    width: 100%;
+    height: 224px;
+    overflow: hidden;
+    margin:  0 0 16px 0;
+    &-bg {
+      width: 100%;
+      height: 100%;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+.user {
+  &__container {
+
+  }
+  &__image {
+    &-container {
+
+    }
+    &-link {
+
+    }
+  }
+}
+
+
