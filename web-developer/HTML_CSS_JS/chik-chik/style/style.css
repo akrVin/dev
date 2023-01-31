@@ -1,3 +1,10 @@
+@import url(./normalise.css);
+@import url(./header.css);
+@import url(./main-link.css);
+@import url(./navigation.css);
+@import url(./hero.css);
+
+
 @font-face {
 	font-family: 'Raleway';
 	src: url('./../fonts/Raleway-Regular.eot');
@@ -8,10 +15,15 @@
 
 html, body {
   box-sizing: border-box;
+  margin: 0;
 }
 
 *, *::after, *::before {
   box-sizing: inherit;
+}
+
+button, a, h1, h2, h3 {
+  text-transform: uppercase;
 }
 
 img {
@@ -38,24 +50,4 @@ body {
   max-width: 1312px;
   padding: 0 48px;
   margin: 0 auto;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 17px;
-  border-bottom: 1px solid #BFBDB2;
-}
-
-.header__navigation {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 54px;
-}
-
-.navigation__list {
-  
 }
