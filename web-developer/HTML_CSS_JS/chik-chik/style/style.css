@@ -52,3 +52,9 @@ body {
   padding: 0 48px;
   margin: 0 auto;
 }
+
+@media (max-width: 560px) {
+  .container {
+    padding: 0 24px;
+  }
+}
