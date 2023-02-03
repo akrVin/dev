@@ -16,6 +16,8 @@
 .price__wrapper-content {
   display: flex;
   gap: 32px;
+  /* width: 100%;
+  height: 100%; */
 }
 
 .price__wrapper-content::before {
@@ -25,6 +27,7 @@
   background-size: cover;
   background-image: url(./../img/bg-price.jpg);
 }
+
 .price__content {
   flex-basis: 50%;
 }
@@ -40,7 +43,6 @@
   justify-content: space-between;
   font-size: 14px;
   line-height: 1;
-  text-transform: uppercase;
   border-bottom: 1px solid #BFBDB2;
   margin-bottom: 24px;
   padding-bottom: 7px;
@@ -50,6 +52,7 @@
   margin-bottom: 0;
 }
 .price__service {
+  text-transform: uppercase;
 }
 .price__cost {
   
@@ -72,12 +75,12 @@
   margin-bottom: 16px;
 }
 
-/* .price__wrapper-content::before {
-  content: '';
-} */
+.price__wrapper-content::before {
+  content: none;
+}
 
 .price__content {
-  /* flex-basis: 100%; */
+  flex-basis: 100%;
 }
 
 .price__list {
