@@ -3,9 +3,6 @@
 }
 
 .price__title {
-  font-weight: 400;
-  font-size: 40px;
-  text-transform: uppercase;
   margin: 0 0 16px;
 }
 .price__tagline {
@@ -16,8 +13,6 @@
 .price__wrapper-content {
   display: flex;
   gap: 32px;
-  /* width: 100%;
-  height: 100%; */
 }
 
 .price__wrapper-content::before {
@@ -54,15 +49,11 @@
 .price__service {
   text-transform: uppercase;
 }
-.price__cost {
-  
-}
+
 .price__link {
-
+  display: inline-block;
 }
-.main__link {
 
-}
 
 @media (max-width: 768px) {
   .price {
