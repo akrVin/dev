@@ -26,6 +26,10 @@
 .radio__input:checked + .radio__label {
   color: #241D1C;
   background: #F6F3E3;
+  background-image: var(--bg-image);
+  background-size: 36px;
+  background-position: 8px;
+  background-repeat: no-repeat;
 }
 
 .radio__label_spec {
