@@ -1,14 +1,15 @@
 .slider {
-  overflow: hidden;
+  max-width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .slider__container {
   /* display: none; */
-
 }
 .slider__list {
   display: flex;
+  width: 100%;
   padding: 0;
   margin: 0 -16px;
 }
