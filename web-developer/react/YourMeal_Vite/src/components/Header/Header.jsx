@@ -1,1 +1,1 @@
-import styleHeader from "./Header"
+import styleHeader from "./Header.module.css"
