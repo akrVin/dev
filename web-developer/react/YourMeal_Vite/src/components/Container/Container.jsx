@@ -3,6 +3,6 @@ import classNames from "classNames";
 
 export const Container = ({className}) => {
   return(
-  <div className={(style.container)}></div>
+  <div className={classNames(style.container)}></div>
   );
 }
