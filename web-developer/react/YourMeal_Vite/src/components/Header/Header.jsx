@@ -3,7 +3,7 @@ import logo from "./../../assets/img/logo.svg";
 
 export const Header = () => (
     <header className="header">
-    <div className="container header__container">
+    <Container className="container header__container">
       <img className="header__logo" src={logo}
       alt="Логотип YourMeal"/>
 
