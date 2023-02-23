@@ -10,7 +10,7 @@ export const Header = () => (
       alt="Логотип YourMeal"/>
 
       <div className={style.header__wrapper}>
-        <h1 className="header__title}>
+        <h1 className={style.header__title}>
           <span>Только самые</span>
           <span className="header__red">сочные бургеры!</span>
         </h1>
