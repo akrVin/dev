@@ -1,5 +1,5 @@
 import styleHeader from "./Header.module.css";
-import lo
+import logo e
 
 export const Header = () => (
     <header className="header">
