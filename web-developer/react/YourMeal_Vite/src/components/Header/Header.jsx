@@ -5,7 +5,7 @@ import { Container } from
 
 export const Header = () => (
     <header className="header">
-    <Container className="container header__container">
+    <Container className="header__container">
       <img className="header__logo" src={logo}
       alt="Логотип YourMeal"/>
 
