@@ -1,10 +1,10 @@
 import styleHeader from "./Header.module.css";
-import logo from "./../../assets/img/logo.svg"
+import logo from "./../../assets/img/logo.svg";
 
 export const Header = () => (
     <header className="header">
     <div className="container header__container">
-      <img className="header__logo" src="img/logo.svg" alt="Логотип YourMeal">
+      <img className="header__logo" src=logo alt="Логотип YourMeal">
 
       <div className="header__wrapper">
         <h1 className="header__title">
