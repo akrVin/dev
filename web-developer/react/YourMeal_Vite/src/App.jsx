@@ -7,7 +7,7 @@ export const App = () => {
       <header></header>
       <main>
         <nav>
-          <Container maks="nikolaevich" className="navigation__container"/>
+          <Container andrey="Nikolaevich" className="navigation__container"/>
         </nav>
         <section></section>
       </main>
