@@ -4,7 +4,7 @@ export const App = () => {
 
   return (
     <>
-      <header></header>
+      <Header
       <main>
         <nav>
           <Container andrey="Nikolaevich" className="navigation__container"/>
