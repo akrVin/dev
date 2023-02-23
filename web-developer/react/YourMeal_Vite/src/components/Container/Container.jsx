@@ -1,5 +1,5 @@
 import style from "./Container.modyle.css";
-import 
+import class
 
 export const Container = () => (
   <div className={style.container}></div>
