@@ -4,18 +4,18 @@ import { Container } from
 "./../Container/Container";
 
 export const Header = () => (
-    <header className={style.header}>
-    <Container className={style.header__container}>
-      <img className={style.header__logo} src={logo}
+    <header className={styleHeader.header}>
+    <Container className={styleHeader.header__container}>
+      <img className={styleHeader.header__logo} src={logo}
       alt="Логотип YourMeal"/>
 
-      <div className={style.header__wrapper}>
-        <h1 className={style.header__title}>
+      <div className={styleHeader.header__wrapper}>
+        <h1 className={styleHeader.header__title}>
           <span>Только самые</span>
-          <span className={style.header__red}>сочные бургеры!</span>
+          <span className={styleHeader.header__red}>сочные бургеры!</span>
         </h1>
 
-        <p className={style.header__appeal}>Бесплатная доставка от 599₽</p>
+        <p className={styleHeader.header__appeal}>Бесплатная доставка от 599₽</p>
       </div>
     </div>
   </header>
