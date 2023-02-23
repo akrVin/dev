@@ -12,7 +12,7 @@ export const Header = () => (
       <div className={style.header__wrapper}>
         <h1 className={style.header__title}>
           <span>Только самые</span>
-          <span className="header__red">сочные бургеры!</span>
+          <span className={style.header__red}>сочные бургеры!</span>
         </h1>
 
         <p className="header__appeal">Бесплатная доставка от 599₽</p>
