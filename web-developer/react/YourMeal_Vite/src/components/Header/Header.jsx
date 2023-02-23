@@ -1,5 +1,5 @@
 import styleHeader from "./Header.module.css";
-import logo from "./../../ass"
+import logo from "./../../asset"
 
 export const Header = () => (
     <header className="header">
