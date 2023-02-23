@@ -9,8 +9,8 @@ export const Header = () => (
       <img className={style.header__logo} src={logo}
       alt="Логотип YourMeal"/>
 
-      <div className={style.header__wrapper">
-        <h1 className="header__title">
+      <div className={style.header__wrapper}>
+        <h1 className="header__title}>
           <span>Только самые</span>
           <span className="header__red">сочные бургеры!</span>
         </h1>
