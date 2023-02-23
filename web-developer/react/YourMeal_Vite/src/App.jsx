@@ -1,5 +1,5 @@
 import { Container } from "./components/Container/Container";
-import Header from "./components/H"
+import Header from "./components/Header";
 
 
 export const App = () => {
