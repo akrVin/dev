@@ -1,3 +1,3 @@
 import styleHeader from "./Header.module.css";
 
-export const 
+export const Header
