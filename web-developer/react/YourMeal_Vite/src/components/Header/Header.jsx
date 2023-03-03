@@ -1,6 +1,6 @@
 import style from "./Header.module.css";
 import logo from "./../../assets/img/logo.svg";
-import { Container } from './../Container/Container';
+import { Container } from "../Container/Container";
 
 
 export const Header = () => (
@@ -8,7 +8,7 @@ export const Header = () => (
 
     <Container className={style.header__container} />
 
-      <img className={style.header__logo} src={logo} alt="Логотип YourMeal"/>
+      <img className={style.header__logo} src={logo} alt="Логотип YourMeal" />
 
       <div className={style.header__wrapper}>
 
