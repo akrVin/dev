@@ -1,15 +1,14 @@
 import "./count.css";
 import "./goods.css";
-import "./order.css";
 
 export const Order = () => {
 
 
   return (
     
-          <div className="catalog__order order">
+          <div className="order">
             <section className="order__wrapper">
-              <div className="order__header" tabindex="0" role="button">
+              <div className="order__header" tabIndex="0" role="button">
                 <h2 className="order__title">Корзина</h2>
 
                 <span className="order__count">4</span>
@@ -17,7 +16,7 @@ export const Order = () => {
 
               <div className="order__wrap_list">
                 <ul className="order__list">
-                  <li className="order__item">
+                  {/* <li className="order__item">
                     <img className="order__image" src="img/burger_1.jpg" alt="Супер сырный" />
 
                     <div className="order__goods goods">
@@ -75,7 +74,7 @@ export const Order = () => {
                       <p className="count__amount">1</p>
                       <button className="count__plus">+</button>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
 
                 <div className="order__total">
