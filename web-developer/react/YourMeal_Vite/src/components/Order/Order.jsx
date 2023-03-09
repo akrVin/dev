@@ -1,5 +1,6 @@
-import "./count.css";
-import "./goods.css";
+import { Count } from "../Count/Count";
+import { OrderGoods } from "../OrderGoods/OrderGoods";
+// import "./goods.css";
 
 export const Order = () => {
 
@@ -16,6 +17,7 @@ export const Order = () => {
 
               <div className="order__wrap_list">
                 <ul className="order__list">
+                  <OrderGoods />
                   {/* <li className="order__item">
                     <img className="order__image" src="img/burger_1.jpg" alt="Супер сырный" />
 
