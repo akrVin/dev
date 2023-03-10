@@ -29,7 +29,6 @@ export const Catalog = () => {
               <ul className={style.list}>
                 {goodsList.map(item => (
                   <li className={style.item}>
-                    {/*  */}
                     <CatalogProduct title={item.title} />
                   </li>
                 ))}

@@ -1,15 +1,16 @@
-import style from 'OrderGoods.module.css';
+import style from './OrderGoods.module.css';
+import { Count } from '../Count/Count';
 
 
-export const OrderGoods = () => {
+export const OrderGoods = ({ item }) => {
 
   return (
     
-    <li className={style.order__item}>
-      <img className={style.order__image} src="img/burger_1.jpg" alt="Супер сырный" />
+    <li className={style.item}>
+      <img className={style.image} src="img/burger_1.jpg" alt={item} />
 
       <div className={style.goods}>
-        <h3 className={style.title}>Супер сырный</h3>
+        <h3 className={style.title}>{item}</h3>
 
         <p className={style.weight}>512г</p>
 
@@ -18,13 +19,7 @@ export const OrderGoods = () => {
         </p>
       </div>
 
-
-      <Count />
-      {/* <div className="count">
-        <button className="count__minus">-</button>
-        <p className="count__amount">1</p>
-        <button className="count__plus">+</button>
-      </div> */}
+      <Count count={1} />
     </li>
   );
 }

@@ -1,5 +1,5 @@
 
-.order__item {
+.item {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -7,11 +7,11 @@
   border-bottom: 1px solid #F2F2F3;
 }
 
-.order__item:first-child {
+.item:first-child {
   border-top: 1px solid #F2F2F3;
 }
 
-.order__image {
+.image {
   width: 64px;
   height: 52px;
   border-radius: 8px;
@@ -39,7 +39,7 @@
 
 @media (min-width: 1024px) {
 
-  .order__item  {
+  .item  {
     padding: 15px 0;
   }
 
