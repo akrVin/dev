@@ -8,7 +8,7 @@ import { API_URI } from '../../const';
 
 export const Navigation = () => {
 
-  const { category, activeCategory }= useSelector((state) => state.category);
+  const { category, activeCategory } = useSelector((state) => state.category);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const Navigation = () => {
       <Container className={classNames(style.container)}>
         <ul className={style.list}>
           {category.map((item, i) => 
-            <li key={item} className={style.item}>
+            <li key={item.title} className={style.item}>
               <button 
                 className={classNames(
                   style.button, 
