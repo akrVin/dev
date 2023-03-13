@@ -20,7 +20,7 @@ export const CatalogProduct = ({ item }) => {
 
       <button className={style.add}
         type="button"
-        >Добавить</button>
+        onCli>Добавить</button>
     </article>
   );
 }
