@@ -1,4 +1,4 @@
-import { useDispatch } fr
+import { useDispatch } from 'react-,'
 import style from './CatalogProduct.module.css';
 import { API_URI } from '../../const';
 
