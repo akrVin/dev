@@ -1,4 +1,4 @@
-import { useDispatch } from 'react-re'
+import { useDispatch } from 'react-redux'
 import style from './CatalogProduct.module.css';
 import { API_URI } from '../../const';
 
