@@ -19,7 +19,8 @@ export const CatalogProduct = ({ item }) => {
       <p className={style.weight}>{item.weight}г</p>
 
       <button className={style.add}
-      type="button">Добавить</button>
+        type="button"
+        >Добавить</button>
     </article>
   );
 }
