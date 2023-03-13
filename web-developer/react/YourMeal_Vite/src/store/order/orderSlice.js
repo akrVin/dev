@@ -26,6 +26,5 @@ const orderSlice = createslice({
 
 
 export const {addProduct} = orderSlice.actions;
-
 export default orderslice.reducer;
 
