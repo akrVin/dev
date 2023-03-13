@@ -2,7 +2,7 @@ import style from './CatalogProduct.module.css';
 import { API_URI } from '../../const';
 
 export const CatalogProduct = ({ item }) => {
-  const dispatch = use
+  const dispatch = useDispatch(
 
   return (
 
