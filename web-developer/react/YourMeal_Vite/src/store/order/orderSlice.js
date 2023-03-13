@@ -9,7 +9,7 @@ const initialState = {
 const orderSlice = createslice({
   name: 'order',
   initialState,
-  reducer: {
+  reducers: {
     addProduct: (state, action) => {
       const product = state.orderList.find(
         item => item.id === action.payload.id
