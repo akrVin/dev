@@ -20,7 +20,7 @@ export const CatalogProduct = ({ item }) => {
 
       <button className={style.add}
         type="button"
-        onClick={}>Добавить</button>
+        onClick={() =}>Добавить</button>
     </article>
   );
 }
