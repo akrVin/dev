@@ -22,7 +22,7 @@ export const CatalogProduct = ({ item }) => {
         type="button"
         onClick={() => {
           dispatch(addProduct(id: item.id))
-        }>Добавить</button>
+        }}>Добавить</button>
     </article>
   );
 }
