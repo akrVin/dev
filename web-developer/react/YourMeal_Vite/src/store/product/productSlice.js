@@ -5,7 +5,7 @@ import { API_URI, POSTFIX } from '../../const';
 
 const initialState = {
   products: [],
-  error: '',
+  error: 'К сожалению товаров данной категории нет',
 };
 
 export const productRequestAsync = createAsyncThunk(
