@@ -1,0 +1,24 @@
+@import './vars';
+
+// .font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
+//   font-family: '@{fontName}';
+//   src: url('/fonts/@{urlName}/@{urlName}.eot');
+//   src: url('/fonts/@{urlName}/@{urlName}.eot#iefix') format('embedded-opentype'),
+//   url('/fonts/@{urlName}/@{urlName}.woff') format('woff'),
+//     url('/fonts/@{urlName}/@{urlName}.ttf') format('truetype'),
+//     url('/fonts/@{urlName}/@{urlName}.svg') format('svg');
+//     font-weight: @weight;
+//     font-style: @style;
+// }
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-Medium.eot');
+    src: url('Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff'),
+        url('Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

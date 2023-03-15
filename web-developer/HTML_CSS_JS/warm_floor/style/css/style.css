@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/Inter-Medium.eot');
+  src: url('../../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'), url('../../fonts/Inter-Medium.woff2') format('woff2'), url('../../fonts/Inter-Medium.woff') format('woff'), url('../../fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background-color: #fff;
+}
+.fi {
+  display: grid;
+}
+.example {
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -webkit-linear-gradient(top, white, black);
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
