@@ -12,6 +12,7 @@ export const localStorageMiddleware = store => next => action => {
 
   if (nextAction.type.startsWith('order/')) {
     const orderList = store.getState().order.orderList;
+    localStorage.getItem('order', JSON.stringify(orderList));
   }
   return nextAction;
 }
