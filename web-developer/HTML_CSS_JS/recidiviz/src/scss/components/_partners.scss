@@ -1,0 +1,96 @@
+.partners {
+  padding: 17px 0;
+
+  /* .partners__container*/
+
+  &__container {
+    align-items: center;
+    gap: 7px;
+  }
+
+  /* .partners__title */
+
+  &__title {
+    padding: 0;
+    @include formatFont(11px, 145%, $textColor06);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  /* .partners__block-image */
+
+  &__block-image {
+  }
+
+  /* .partners__block-list */
+
+  &__block-list {
+    align-items: center;
+    gap: 13px;
+  }
+
+  /* .partners__block-item */
+
+  &__block-item {
+  }
+
+  /* .partners__block-link */
+
+  &__block-link {
+    display: block;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  /* .partners__block-img */
+
+  &__block-img {
+  }
+
+  /* .partners__link */
+
+  &__link {
+    @include formatFont(11px, 145%, $textColor06);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+    &:focus {
+      outline: none;
+    }
+    @include hover {
+      color: $accentColor;
+    }
+    &:active {
+      color: $activeColor;
+    }
+  }
+
+  /* partners__link.focus-visible */
+
+  &__link.focus-visible {
+    outline: 1px solid $activeColor;
+    outline-offset: 3px;
+  }
+
+  /* .partners__block-link.focus-visible */
+
+  &__block-link.focus-visible {
+    outline: 1px solid $activeColor;
+    outline-offset: 3px;
+  }
+}
+
+/* partners__link.focus-visible */
+
+.partners__link.focus-visible {
+  outline: 1px solid $activeColor;
+  outline-offset: 3px;
+}
+
+/* .partners__block-link.focus-visible */
+
+.partners__block-link.focus-visible {
+  outline: 1px solid $activeColor;
+  outline-offset: 3px;
+}

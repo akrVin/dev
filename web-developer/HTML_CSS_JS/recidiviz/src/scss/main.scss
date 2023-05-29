@@ -1,0 +1,20 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/btn";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/steps";
+@import "./components/approach";
+@import "./components/press";
+@import "./components/communities";
+@import "./components/partners";
+@import "./components/info";
+@import "./components/articles";
+@import "./components/work";
+@import "./components/footer";
+// тестовые стили, удалите их

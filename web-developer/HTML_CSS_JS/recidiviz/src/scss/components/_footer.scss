@@ -1,0 +1,82 @@
+.footer {
+  background-color: #001414;
+
+  &__top {
+    padding: 112px 0 137px 0;
+  }
+
+  &-nav {
+    &__link {
+      @include formatFont(15px, 200%, #edeceb);
+      transition: color 0.3s  ease-in-out;
+      @include hover {
+        color: $accentColor;
+      }
+      &:active {
+        color: $activeColor;
+      }
+    }
+    &__link.focus-visible {
+      outline: 1px solid $activeColor;
+      outline-offset: 3px;
+      color: $activeColor;
+    }
+  }
+  &__bottom {
+    padding: 40px 0;
+    background-color: #000f0f;
+    &-container {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &-privacy {
+    &__list {
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+    &__item {
+      padding: 5px 0 8px 0;
+    }
+    &__link {
+      @include formatFont(10px, 100%, #e5ecec);
+      transition: color 0.3s ease-in-out;
+      @include hover {
+        color: $accentColor;
+      }
+      &:active {
+        color: $activeColor;
+      }
+    }
+    &__link.focus-visible {
+      outline: 1px solid $activeColor;
+      outline-offset: 3px;
+      color: $activeColor;
+    }
+  }
+  &__copyright {
+    @include formatFont(10px, 100%, #e5ecec);
+  }
+}
+
+.menu {
+  &__title {
+    margin: 0 0 24px 0;
+    @include formatFont(11px, 145%, #7d9798);
+    text-transform: uppercase;
+  }
+  &__line {
+    display: block;
+    width: 17px;
+    height: 1px;
+    background: #25b895;
+    margin-bottom: 23px;
+  }
+  &__item {
+    grid-column: 2 span;
+    &:last-child {
+      grid-column: 11 / 2 span;
+    }
+  }
+}

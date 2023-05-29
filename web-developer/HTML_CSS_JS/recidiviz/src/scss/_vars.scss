@@ -1,0 +1,39 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+// :root {
+//   // base
+//   --font-family: "PublicSans", sans-serif;
+//   --content-width: 1170px;
+//   --container-offset: 15px;
+//   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+//   // colors
+//   --light-color: #fff;
+// }
+
+// base
+$font-family: "PublicSans", sans-serif;
+$second-family: "LibreBaskerville", sans-serif;
+$content-width: 1152px;
+$container-offset: 15px;
+$container-width: calc($content-width + $container-offset) * 2;
+
+// colors
+$lightColor: #fff;
+$lightColor06: rgba(255, 255, 255, 0.6);
+$lightColor03: rgba(255, 255, 255, 0.3);
+$textTitleDark: #003331;
+$textColor08: rgba(53, 83, 98, 0.8);
+$textColor06: rgba(53, 83, 98, 0.6);
+$accentColor: #00A1FF;
+$activeColor: #E00E00;
+$bgColor: #014C48;
+$bgColorСommunities: #001414;
+
+// burger
+$burgerWidth: 30px;
+$burgerHeight: 20px;
+$burgerLineHeight: 2px;
+
+//
+$offset: 32px;

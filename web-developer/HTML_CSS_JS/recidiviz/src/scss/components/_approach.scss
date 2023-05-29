@@ -1,0 +1,63 @@
+.approach {
+  padding: 80px 0;
+  background-color: #f7f8f8;
+
+  /* .approach__container */
+
+  &__container {
+
+  }
+
+  /* .approach__content */
+
+  &__content {
+    grid-column: 5 span;
+    padding-top: 30px;
+  }
+
+  /* .approach__title */
+
+  &__title {
+    @include formatFont(22px, 100%, $textTitleDark);
+    margin: 0 0 13px 0;
+  }
+
+  /* .approach__description */
+
+  &__description {
+    @include formatFont(15px, 160%, $textColor08);
+    padding: 0 0 37px 0;
+  }
+
+  /* .approach__button */
+
+  &__button {
+    @include formatFont(13px, 150%, #00413e);
+    border: 1px solid rgba(53, 83, 98, 0.2);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    @include hover {
+      color: $lightColor;
+      background-color: $accentColor;
+    }
+    &:active {
+      background-color: $activeColor;
+    }
+  }
+
+  /* .approach__image */
+
+  &__image {
+    grid-column: 7 / 6 span;
+    max-width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap:8px
+  }
+
+  /* .approach__img */
+
+  &__img {
+    max-width: 100%;
+    border-radius: 3px;
+  }
+}

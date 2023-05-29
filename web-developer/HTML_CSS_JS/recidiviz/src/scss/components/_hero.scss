@@ -1,0 +1,93 @@
+.hero {
+  flex-direction: column;
+  min-height: 776px;
+  width: 100%;
+  background-image: url(../../img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 190px 0 40px 0;
+
+  /* .hero__conteiner */
+
+  &__container {
+
+    &--bottom {
+      width: 100%;
+      margin-top: auto;
+    }
+  }
+
+  /* .hero__content */
+
+  &__content {
+    grid-column: 6 span;
+    width: 535px;
+  }
+
+  /* .hero__title */
+
+  &__title {
+    @include fontSettingsLB;
+    @include formatFont(38px, 116%, $lightColor);
+    margin: 0 0 29px 0;
+  }
+
+    /* .hero__description*/
+
+  &__description {
+    @include formatFont(18px, 150%, $lightColor);
+    margin: 0 0 29px 0;
+  }
+
+  /* .hero__button*/
+
+  &__button {
+    @include formatFont(13px, 150%, $lightColor);
+    border: 1px solid $lightColor03;
+  }
+
+  /* .hero__subtitle" */
+
+  &__subtitle {
+    @include formatFont(15px, 150%, $lightColor);
+    margin: 0 0 15px 0;
+  }
+
+  /* .hero__list */
+
+  &__list {
+    grid-column-gap: 32px;
+  }
+
+  /* .hero__item */
+
+  &__item {
+    grid-column: 2 span;
+  }
+
+  /* .hero__link */
+
+  &__link {
+    display: block;
+    @include formatFont(15px, 150%, $lightColor);
+    padding: 15px 100% 0 0;
+    border-top: 1px solid $lightColor06;
+    transition: color 0.3s ease-in-out, border-top 0.3s ease-in-out;
+    &:focus {
+      outline: none;
+    }
+    @include hover {
+      color: $accentColor;
+      border-top: 1px solid $accentColor;
+    }
+    &:active {
+      color: $activeColor;
+      border-top: 1px solid $activeColor;
+    }
+  }
+  &__link.focus-visible {
+    border-top: 1px solid $activeColor;
+    color: $activeColor;
+  }
+}

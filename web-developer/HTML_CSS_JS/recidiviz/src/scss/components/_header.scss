@@ -1,0 +1,33 @@
+@import '_navigation.scss';
+
+.header {
+  padding: 17px 0;
+  &--position {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+
+  /* .header__container */
+
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* .header__logo */
+
+  &__logo {
+  }
+}
+
+.burger {
+  display: none;
+		/* .burger__line */
+
+		&__line {
+		}
+}
+

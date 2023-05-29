@@ -1,0 +1,146 @@
+.articles {
+  padding: 90px 0;
+
+  /* .articles__container */
+
+  &__container {
+  }
+
+  /* .articles__header */
+
+  &__header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  /* .articles__title */
+
+  &__title {
+    @include formatFont(27px, 141%, $textTitleDark);
+    letter-spacing: 1.2px;
+  }
+
+  /* .articles__link */
+
+  &__link {
+    @include formatFont(13px, 154%, #00413e);
+    text-align: center;
+    letter-spacing: 0.02px;
+    border: 1px solid rgba(53, 83, 98, 0.2);
+    border-radius: 80px;
+  }
+
+  /* .articles__press */
+
+  &__press {
+  }
+
+  /* .articles__list */
+
+  &__list {
+    grid-gap: 31px;
+  }
+
+  /* .articles__item */
+
+  &__item {
+    grid-column: 4 span;
+    border-top: 1px solid rgba(53, 83, 98, 0.3);
+  }
+
+
+}
+
+.press-card {
+  position: relative;
+  min-height: 145px;
+
+  /* .press-card__top */
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* .press-card__author */
+
+  &__author {
+    padding: 20px 0;
+    padding-left: 32px;
+    background-position: left top 15px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    @include formatFont(11px, 145%, $textColor06);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  /* .press-card__autor--ted */
+
+  &__autor--ted {
+    background-image: url('../img/ted-2x.png');
+  }
+
+  &__autor--corr {
+    background-image: url('../img/corr.png');
+  }
+
+  &__autor--dep {
+    background-image: url('../img/dep.png');
+  }
+
+  &__autor--nyt {
+    background-image: url('../img/nyt-2x.png');
+  }
+
+  &__autor--c1 {
+    background-image: url('../img/c1.png');
+  }
+
+  &__autor--roc {
+    background-image: url('../img/roc.png');
+  }
+
+  /* .press-card__data */
+
+  &__data {
+    @include formatFont(11px, 145%, $textColor06);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  /* .press-card__title */
+
+  &__title {
+    margin: -13px 0 0 0;
+  }
+
+  /* .press-card__link */
+
+  &__link {
+    @include formatFont(17px, 145%, #00413e);
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+    &:focus {
+      outline: none;
+    }
+    @include hover {
+      color: $accentColor;
+      border-bottom: 1px solid $accentColor;
+    }
+    &:active {
+      color: $activeColor;
+      border-bottom: 1px solid $activeColor;
+    }
+  }
+
+  &__link.focus-visible {
+    border-bottom : 1px solid $activeColor;
+    color: $activeColor;
+  }
+}

@@ -1,0 +1,13 @@
+@mixin fontSettingsLB{
+  font-family: $second-family;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  margin: 0;
+}
+
+@mixin formatFont($fz, $lh, $fc){
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lh;
+  color: $fc;
+}

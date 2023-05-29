@@ -1,0 +1,68 @@
+.press {
+  max-width: 100%;
+  background-color: $lightColor;
+  padding: 24px 0;
+
+  /* .press__container */
+
+  &__container {
+  }
+
+  /* .press__list */
+
+  &__list {
+    max-width: 100%;
+  }
+
+  /* .press__item */
+
+  &__item {
+    grid-column: 2 span;
+  }
+
+  /* .press__link */
+
+  &__link {
+    display: block;
+    @include formatFont(15px, 160%, $textColor08);
+    padding: 15px 0 0 32px;
+    border-top: 1px solid $lightColor06;
+    transition: color 0.3s ease-in-out, border-top 0.3s ease-in-out;
+    background-position: left top 15px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    &--ted {
+      background-image: url('../img/ted-2x.png');
+    }
+    &--nyt {
+      background-image: url('../img/nyt-2x.png');
+    }
+    &--scoop {
+      background-image: url('../img/scoop-2x.png');
+    }
+    &--press {
+      background-image: url('../img/press-2x.png');
+    }
+    &--time {
+      background-image: url('../img/time-2x.png');
+    }
+    &--freethink {
+      background-image: url('../img/freethink-2x.png');
+    }
+    &:focus {
+      outline: none;
+    }
+    @include hover {
+      color: $accentColor;
+      border-top: 1px solid $accentColor;
+    }
+    &:active {
+      color: $activeColor;
+      border-top: 1px solid $activeColor;
+    }
+  }
+  &__link.focus-visible {
+    border-top: 1px solid $activeColor;
+    color: $activeColor;
+  }
+}

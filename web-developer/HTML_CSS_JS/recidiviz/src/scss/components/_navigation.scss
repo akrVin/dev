@@ -1,0 +1,35 @@
+.nav {
+  align-items: center;
+  padding: 0 16px 0 0;
+
+		/* .nav__list */
+
+		&__list {
+      align-items: center;
+      margin: 0 32px 0 0;
+      gap: 51px;
+		}
+
+    /* nav__link */
+
+		&__link {
+      display: block;
+      @include formatFont(13px, 130%, $lightColor);
+      transition: color 0.3s ease-in-out;
+      &:focus {
+        outline: none;
+      }
+      @include hover {
+        color: $accentColor;
+      }
+      &:active {
+        color: $activeColor;
+      }
+		}
+
+    /* nav__link.focus-visible */
+    &__link.focus-visible {
+      outline: 1px solid $activeColor;
+      outline-offset: 3px;
+    }
+}

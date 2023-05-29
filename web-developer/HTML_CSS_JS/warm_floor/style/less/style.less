@@ -1,18 +1,12 @@
-// out: "../css/style.css"
-
-@import './fonts';
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter-Medium.eot');
+  src: url('Inter-Medium.eot?#iefix') format('embedded-opentype'), url('Inter-Medium.woff2') format('woff2'), url('Inter-Medium.woff') format('woff'), url('Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
-  background-color: #fff;
-}
-
-.fi {
-  display: grid;
-}
-
-.example {
-    display: grid;
-    transition: all .5s;
-    user-select: none;
-    background: linear-gradient(to bottom, white, black);
+  display: flex;
 }
