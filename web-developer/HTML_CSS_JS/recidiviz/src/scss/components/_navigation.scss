@@ -8,6 +8,12 @@
       align-items: center;
       margin: 0 32px 0 0;
       gap: 51px;
+
+      @include small-tablet {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+      }
 		}
 
     /* nav__link */
@@ -25,6 +31,13 @@
       &:active {
         color: $activeColor;
       }
+
+      @include small-tablet {
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        margin: 5px;
+        // transform: translate(-100%)
+      }
 		}
 
     /* nav__link.focus-visible */
@@ -32,4 +45,16 @@
       outline: 1px solid $activeColor;
       outline-offset: 3px;
     }
+
+  @include small-tablet {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow: hidden;
+    border: 1px solid red;
+    transform: translate(110%)
+  }
 }
