@@ -1,0 +1,58 @@
+.burger {
+  display: none;
+}
+
+@include small-tablet {
+
+  .burger {
+    display: block;
+    position: relative;
+    border: none;
+    padding: 0;
+    width: $burger-width;
+    height: $burger-height;
+    color: #e9e1c9;
+    background-color: transparent;
+    cursor: pointer;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $burger-line-height;
+      background-color: currentColor;
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      // bottom: 0;
+      top: calc(100% - $burger-line-height);
+    }
+    &__line {
+      position: absolute;
+      left: 0;
+      top: calc(50% - $burger-line-height);
+      width: 100%;
+      height: $burger-line-height;
+      background-color: currentColor;
+      transform: translateY(50%);
+      transition: transform 0.3s ease-in-out;
+    }
+    &_active {
+      &::before {
+        top: 50%;
+        transform: rotate(45deg);
+      }
+      &::after {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+      .burger__line {
+        transform: scale(0);
+      }
+    }
+  }
+}

@@ -22,19 +22,7 @@
   &__logo {
   }
 
-
-  @include small-tablet {
-
-    .burger {
-      display: block;
-      @include burger;
-    }
-
-  }
 }
 
-.burger {
-  display: none;
 
-}
 
