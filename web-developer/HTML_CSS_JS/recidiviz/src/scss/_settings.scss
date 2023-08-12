@@ -7,6 +7,12 @@ body{
   height: 100%;
 }
 
+// body {
+//   &_lock {
+//     overflow: hidden;
+//   }
+// }
+
 *,
 *::before,
 *::after {
@@ -140,4 +146,8 @@ a {
 h1,
 h2 {
   @include fontSettingsLB;
+}
+
+.body_lock {
+  overflow: hidden;
 }

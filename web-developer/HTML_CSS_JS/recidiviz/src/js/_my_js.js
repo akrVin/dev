@@ -1,15 +1,20 @@
 const burger = document.querySelector('.burger');
+const header = document.querySelector('.header');
+const body = document.body;
+const navLinks = document.querySelectorAll('.nav__link');
 
-
-// function(burger_menu) {
-//   burger.addEventListener('click', (e) => {
-//     burger.classList.toggle('burger--active');
-//   })
-// }
 if (burger) {
   burger.addEventListener('click', (e) => {
+    body.classList.toggle('body_lock');
+    header.classList.toggle('header_active');
     burger.classList.toggle('burger_active');
   });
 }
 
-burger_menu();
+navLinks.forEach(mon => {
+  mon.addEventListener('click', () => {
+    body.classList.remove('body_lock');
+    header.classList.remove('header_active');
+    burger.classList.remove('burger_active');
+  });
+});

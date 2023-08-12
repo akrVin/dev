@@ -2,59 +2,34 @@
   align-items: center;
   padding: 0 16px 0 0;
 
-		/* .nav__list */
+	/* .nav__list */
 
-		&__list {
-      align-items: center;
-      margin: 0 32px 0 0;
-      gap: 51px;
+	&__list {
+    align-items: center;
+    margin: 0 32px 0 0;
+    gap: 51px;
+	}
 
-      @include small-tablet {
-        flex-direction: column;
-        margin: 0;
-        gap: 0;
-      }
-		}
+  /* nav__link */
 
-    /* nav__link */
-
-		&__link {
-      display: block;
-      @include formatFont(13px, 130%, $lightColor);
-      transition: color 0.3s ease-in-out;
-      &:focus {
-        outline: none;
-      }
-      @include hover {
-        color: $accentColor;
-      }
-      &:active {
-        color: $activeColor;
-      }
-
-      @include small-tablet {
-        font-size: 18px;
-        padding: 10px 20px 10px 20px;
-        margin: 5px;
-        // transform: translate(-100%)
-      }
-		}
-
-    /* nav__link.focus-visible */
-    &__link.focus-visible {
-      outline: 1px solid $activeColor;
-      outline-offset: 3px;
+	&__link {
+    display: block;
+    @include formatFont(13px, 130%, $lightColor);
+    transition: color 0.3s ease-in-out;
+    &:focus {
+      outline: none;
     }
+    @include hover {
+      color: $accentColor;
+    }
+    &:active {
+      color: $activeColor;
+    }
+	}
 
-  @include small-tablet {
-    position: absolute;
-    top: 70px;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    overflow: hidden;
-    border: 1px solid red;
-    transform: translate(110%)
+  /* nav__link.focus-visible */
+  &__link.focus-visible {
+    outline: 1px solid $activeColor;
+    outline-offset: 3px;
   }
 }
