@@ -1,11 +1,20 @@
 .steps {
   padding: 120px 0;
   background-color: $lightColor;
+  @include tablet {
+    padding: 90px 0;
+  }
+  @include small-tablet {
+    padding: 60px 0;
+  }
 
   /* .steps__container */
 
   &__container {
-    max-width: 757px
+    max-width: 757px;
+    @include small-tablet {
+      max-width: 600px;
+    }
   }
 
   /* .steps__title */
@@ -15,6 +24,9 @@
     @include formatFont(30px, 127%, $textTitleDark);
     text-align: center;
     margin-bottom: 60px;
+    @include small-tablet {
+      font-size: 25px;
+    }
   }
 
   /* .steps__list */
@@ -53,6 +65,9 @@
       height: 1px;
       background-color: rgba(53, 83, 98, 0.2);
       margin: 40px 0 0 0;
+      @include small-tablet {
+        width: 70px;
+      }
     }
   }
 
