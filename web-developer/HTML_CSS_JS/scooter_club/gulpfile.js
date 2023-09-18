@@ -15,6 +15,7 @@ const svgSprite = require('gulp-svg-sprite');
 const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
+const replaceTask = require('gulp-replace-task');
 const fileInclude = require('gulp-file-include');
 const rev = require('gulp-rev');
 const revRewrite = require('gulp-rev-rewrite');
@@ -28,6 +29,8 @@ const {
 } = require('fs');
 const typograf = require('gulp-typograf');
 const webp = require('gulp-webp');
+const webpHTML = require('gulp-webp-html');
+const webpCSS = require('gulp-webp-css');
 const mainSass = gulpSass(sass);
 const webpackStream = require('webpack-stream');
 const plumber = require('gulp-plumber');
@@ -36,6 +39,7 @@ const zip = require('gulp-zip');
 const fs = require('fs');
 const fonter = require('gulp-fonter');
 const ttf2woff2 = require('gulp-ttf2woff2');
+const vesionNumber = require('gulp-version-number');
 const rootFolder = path.basename(path.resolve());
 
 // paths
@@ -200,6 +204,15 @@ const styles = () => {
     .pipe(gulpif(isProd, cleanCSS({
       level: 2
     })))
+    .pipe(replaceTask({
+      patterns: [
+        {
+          match: /@img\//g,
+          replacement: 'img/'
+        }
+      ]
+    }))
+    .pipe(webpCSS())
     .pipe(dest(paths.buildCssFolder, { sourcemaps: '.' }))
     .pipe(browserSync.stream());
 };
@@ -219,6 +232,7 @@ const stylesBackend = () => {
       grid: true,
       overrideBrowserslist: ["last 5 versions"]
     }))
+    .pipe(replace(/@scss\//g, 'scss/'))
     .pipe(dest(paths.buildCssFolder))
     .pipe(browserSync.stream());
 };
@@ -259,6 +273,14 @@ const scripts = () => {
       console.error('WEBPACK ERROR', err);
       this.emit('end');
     })
+    .pipe(replaceTask({
+      patterns: [
+        {
+          match: /@img\//g,
+          replacement: 'img/'
+        }
+      ]
+    }))
     .pipe(dest(paths.buildJsFolder))
     .pipe(browserSync.stream());
 }
@@ -313,10 +335,11 @@ const images = () => {
     .pipe(gulpif(isProd, image([
       image.mozjpeg({
         quality: 80,
+        interlaced: true,
         progressive: true
       }),
       image.optipng({
-        optimizationLevel: 2
+        optimizationLevel: 3
       }),
     ])))
     .pipe(dest(paths.buildImgFolder))
@@ -329,13 +352,31 @@ const webpImages = () => {
 };
 
 const htmlInclude = () => {
-  return src([`${srcFolder}/*.html`])
+  return src([`${srcFolder}/index.html`])
     .pipe(fileInclude({
-      prefix: '@',
+      prefix: '@@',
       basepath: '@file'
     }))
+    .pipe(replaceTask({
+      patterns: [
+        {
+          match: /@img\//g,
+          replacement: 'img/'
+        }
+      ]
+    }))
+    .pipe(webpHTML())
     .pipe(typograf({
       locale: ['ru', 'en-US']
+    }))
+    .pipe(vesionNumber({
+      'value': '%DT%',
+      'append': {
+        'key': '_v',
+        'cover': 0,
+        'to': ['css', 'js',]
+      },
+      'output': {'file': 'version/version.json'}
     }))
     .pipe(dest(buildFolder))
     .pipe(browserSync.stream());

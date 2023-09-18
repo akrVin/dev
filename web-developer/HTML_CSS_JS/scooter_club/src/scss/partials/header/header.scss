@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  height: 100%;
+ 
+
+  &__image-img {
+    width: 500px;
+    height: 300px;
+  }
+
+  &__image-div {
+    width: 500px;
+    height: 300px;
+    // background-image: url(@img/hero-img/hero-img.png);
+    background-image: url('@img/hero-img/hero-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__container {
+  }
+
+  &__wrapper {
+  }
+
+  &__image-wrapper {
+  }
+
+  &__logo {
+  }
+
+  &__title {
+  }
+
+  &__content {
+  }
+
+  &__text {
+  }
+
+  &__text--discount {
+  }
+
+  &__text--not-discount {
+  }
+
+  &__button {
+  }
+}
+
+.btn {
+}
+
+
