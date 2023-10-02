@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
-
-@@include('partials/head.html', {
-  title: 'Клуб самокатов',
-  fontName: 'YS_Text-Regular'
-})
-
-<body class="page__body">
-  <div class="site-container">
-    @@include('partials/header.html')
-    <main class="main">
-
+<html lang="en">
+  @@include('html/head.html', {
+    "title": "Клуб самокатов",
+    "font": "YSText"
+  })
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      
     </main>
-    @@include('partials/footer.html')
-    <!-- @include('html/h1.html', {= тут параметры в стиле json =}) пример include -->
-  </div>
-</body>
-
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

@@ -1,3 +1,0 @@
-@mixin adaptivFonts($fontSize, $difference) {
-  font-size: calc($fontSize + $difference * ((100vw - 320px) / ($maxWidth - 320px)));
-}
